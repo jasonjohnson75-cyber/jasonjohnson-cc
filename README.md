@@ -17,7 +17,7 @@ This repository contains the complete, production-ready website for **Jason B. J
 - `sitemap.xml` & `robots.txt` - SEO Files
 - `assets/css/styles.css` - Custom Theme CSS (Navy, Teal, Copper, Ivory)
 - `assets/js/main.js` - Navigation & Interactivity JS
-- `assets/images/` - Image Assets & Headshot Placeholders
+- `assets/images/jason-johnson-headshot.jpg` - Professional headshot used on the home and About pages
 - `assets/docs/` - PDF Documents (`Jason_B_Johnson_Professional_Resume.pdf`)
 
 ---
@@ -44,6 +44,6 @@ This repository contains the complete, production-ready website for **Jason B. J
 ---
 
 ## How to Edit Site Content
-- **To update the Headshot:** Replace `assets/images/headshot.jpg` with your photo.
+- **To update the Headshot:** Replace `assets/images/jason-johnson-headshot.jpg` with your photo while keeping the same filename.
 - **To update the PDF Résumé:** Replace `assets/docs/Jason_B_Johnson_Professional_Resume.pdf` with your updated resume PDF file.
 - **To edit text or links:** Edit the respective HTML file directly in GitHub or your code editor.
