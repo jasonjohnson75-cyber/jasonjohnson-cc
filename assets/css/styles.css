@@ -98,28 +98,65 @@ header {
   color: var(--white);
   display: flex;
   flex: 0 0 auto;
-  font-size: 1.05rem;
-  font-weight: 750;
-  gap: 0.7rem;
-  letter-spacing: -0.01em;
+  gap: 0.85rem;
+  min-width: 225px;
 }
 
 .logo-link:hover {
   color: var(--white);
 }
 
-.monogram {
-  align-items: center;
-  background: var(--copper);
+.brand-mark {
+  background: linear-gradient(180deg, var(--copper), #e4a05e);
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(209, 138, 75, 0.2);
+  height: 38px;
+  position: relative;
+  width: 4px;
+}
+
+.brand-mark::after {
+  background: var(--teal);
   border-radius: 50%;
-  color: var(--ink);
-  display: flex;
-  font-size: 0.92rem;
-  font-weight: 850;
-  height: 42px;
-  justify-content: center;
-  letter-spacing: 0.04em;
-  width: 42px;
+  bottom: -4px;
+  content: "";
+  height: 7px;
+  position: absolute;
+  right: -1.5px;
+  width: 7px;
+}
+
+.brand-copy {
+  display: grid;
+  gap: 0.08rem;
+  line-height: 1;
+}
+
+.brand-name {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.brand-name .initial {
+  color: #aebdca;
+  font-family: var(--font-main);
+  font-size: 0.61em;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  margin-right: 0.28rem;
+  text-transform: uppercase;
+  vertical-align: 0.15em;
+}
+
+.brand-role {
+  color: #aebdca;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
 
 .nav-menu {
@@ -1098,8 +1135,16 @@ footer {
     padding: 0.7rem 1rem;
   }
 
-  .logo-link span {
-    font-size: 0.95rem;
+  .logo-link {
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 1.18rem;
+  }
+
+  .brand-role {
+    font-size: 0.55rem;
   }
 
   .hero,
