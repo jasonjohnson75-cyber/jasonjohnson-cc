@@ -39,6 +39,27 @@
     ]
   }
   </script>
+
+  <style id="studentready-project-styles">
+    .studentready-project{padding:clamp(3.5rem,7vw,6.5rem) 1.25rem;background:#f3f0e7}
+    .studentready-project-card{position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);overflow:hidden;background:#123f37;color:#fff;box-shadow:0 24px 60px rgba(15,47,42,.2)}
+    .studentready-project-copy{padding:clamp(2rem,5vw,4.5rem)}
+    .studentready-project .project-label{display:inline-block;margin:0 0 1.1rem;padding:.42rem .65rem;border:1px solid rgba(242,193,78,.6);color:#f2c14e;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .studentready-project h2{margin:0;color:#fff;font-size:clamp(2.4rem,5vw,4.8rem);line-height:.95;letter-spacing:-.05em}
+    .studentready-project .project-mission{max-width:680px;margin:1rem 0 .7rem;color:#fff;font-size:clamp(1.1rem,2vw,1.4rem);font-weight:700;line-height:1.45}
+    .studentready-project .project-detail{max-width:690px;margin:0 0 1.65rem;color:#d3e4de;line-height:1.7}
+    .studentready-project .project-link{display:inline-flex;align-items:center;gap:.65rem;padding:.95rem 1.2rem;background:#f2c14e;color:#102f2a;text-decoration:none;font-weight:850;border:2px solid #f2c14e}
+    .studentready-project .project-link:hover,.studentready-project .project-link:focus-visible{background:#fff;border-color:#fff}
+    .studentready-project-system{display:flex;flex-direction:column;justify-content:center;gap:.85rem;padding:clamp(2rem,4vw,3.5rem);background:#0b302a;border-left:1px solid rgba(255,255,255,.13)}
+    .studentready-project-brand{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
+    .studentready-project-mark{display:flex;align-items:flex-end;gap:.28rem;height:36px}
+    .studentready-project-mark i{display:block;width:7px;background:#f2c14e;border-radius:3px 3px 0 0;transform-origin:bottom}
+    .studentready-project-mark i:nth-child(1){height:22px;transform:rotate(-28deg)}.studentready-project-mark i:nth-child(2){height:35px}.studentready-project-mark i:nth-child(3){height:23px;transform:rotate(28deg)}
+    .studentready-project-brand strong{font-size:1.45rem;color:#fff}
+    .studentready-project-system article{display:grid;grid-template-columns:2.25rem 1fr;gap:.8rem;align-items:center;padding:.9rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15)}
+    .studentready-project-system article span{color:#f2c14e;font-weight:850}.studentready-project-system article b{color:#fff;font-size:.96rem}
+    @media (max-width:800px){.studentready-project-card{grid-template-columns:1fr}.studentready-project-system{border-left:0;border-top:1px solid rgba(255,255,255,.13)}}
+  </style>
 </head>
 <body>
 
@@ -121,6 +142,25 @@
       </div>
     </section>
 
+
+    <section class="studentready-project" aria-labelledby="studentready-project-title">
+      <div class="studentready-project-card">
+        <div class="studentready-project-copy">
+          <p class="project-label">Featured education project</p>
+          <h2 id="studentready-project-title">StudentReady</h2>
+          <p class="project-mission">Practical guidance for supporting the whole student.</p>
+          <p class="project-detail">I created StudentReady to help the adults around students respond with practical, respectful, and evidence-informed support. The site connects school-based needs with activities, behavior and cognitive supports, life readiness guidance, and trusted professional resources.</p>
+          <a class="project-link" href="https://studentready.cc/" target="_blank" rel="noopener">Visit StudentReady <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="studentready-project-system" aria-label="StudentReady focus areas">
+          <div class="studentready-project-brand"><span class="studentready-project-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>StudentReady</strong></div>
+          <article><span>01</span><b>Student-centered support</b></article>
+          <article><span>02</span><b>Adult-guided activities</b></article>
+          <article><span>03</span><b>Behavior and cognitive guidance</b></article>
+          <article><span>04</span><b>Whole-school coordination</b></article>
+        </div>
+      </div>
+    </section>
     <section class="intro-section">
       <div class="section-container intro-grid">
         <div>
