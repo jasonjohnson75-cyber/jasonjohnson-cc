@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#062b3b" />
+  <meta name="description" content="ClassPilot Free Preview. Plan. Teach. Adjust. Your classroom command center builds itself." />
+  <link rel="canonical" href="https://classpilot-free.pages.dev/" />
+  <title>ClassPilot | Free Preview</title>
+  <style>
+    :root{--navy:#062b3b;--navy2:#0b4656;--teal:#18b9a6;--teal2:#49d7bb;--blue:#2f6df6;--gold:#ffb51b;--ink:#09283a;--muted:#627884;--white:#fff}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}
+    body{min-height:100vh;display:grid;place-items:center;padding:28px;background:radial-gradient(circle at 16% 14%,rgba(73,215,187,.24),transparent 28%),radial-gradient(circle at 82% 18%,rgba(47,109,246,.20),transparent 30%),linear-gradient(145deg,var(--navy),var(--navy2));overflow-x:hidden}
+    .shell{width:min(1100px,100%);position:relative}
+    .glow{position:absolute;inset:auto 8% -22px 8%;height:120px;background:rgba(24,185,166,.22);filter:blur(45px);border-radius:50%;pointer-events:none}
+    .card{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:42px;align-items:center;padding:54px;border-radius:34px;background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.48);box-shadow:0 30px 90px rgba(0,0,0,.28);overflow:hidden}
+    .card:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-170px;top:-170px;background:linear-gradient(145deg,rgba(73,215,187,.18),rgba(47,109,246,.08));pointer-events:none}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:#eaf3ff;color:#14386a;font-weight:800;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:28px}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+    h1{font-size:clamp(3rem,7vw,5.6rem);line-height:.92;margin:0;letter-spacing:-.055em;color:#082b4d}
+    h1 span{color:var(--teal)}
+    .tagline{font-size:clamp(1.5rem,3vw,2.15rem);font-weight:800;margin:24px 0 10px;letter-spacing:-.025em}
+    .sub{font-size:clamp(1rem,1.8vw,1.2rem);line-height:1.65;color:var(--muted);max-width:620px;margin:0 0 30px}
+    .actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+    .launch{appearance:none;border:0;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 25px;border-radius:16px;color:#fff;font-size:1.05rem;font-weight:850;background:linear-gradient(135deg,var(--blue),var(--teal));box-shadow:0 15px 30px rgba(47,109,246,.22);transition:transform .18s ease,box-shadow .18s ease}
+    .launch:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(47,109,246,.30)}
+    .launch svg{width:20px;height:20px}
+    .micro{font-size:.9rem;color:#6a7e88;line-height:1.45;max-width:280px}
+    .visual{display:flex;justify-content:center;align-items:center;position:relative;z-index:1}
+    .logo-card{width:min(390px,90%);aspect-ratio:1;display:grid;place-items:center;border-radius:38px;background:linear-gradient(145deg,#f7fffd,#eaf5ff);box-shadow:inset 0 0 0 1px #e3eef3,0 24px 55px rgba(7,43,58,.12);padding:28px}
+    .logo-card svg{width:100%;height:100%;filter:drop-shadow(0 14px 18px rgba(7,43,58,.12))}
+    .footer{display:flex;justify-content:space-between;gap:16px;color:rgba(255,255,255,.74);font-size:.84rem;padding:18px 10px 0}.footer strong{color:#fff}
+    @media(max-width:820px){body{padding:18px}.card{grid-template-columns:1fr;padding:34px 24px;gap:32px}.visual{order:-1}.logo-card{width:min(300px,78vw);padding:20px}.footer{flex-direction:column;text-align:center;align-items:center}.actions{align-items:flex-start;flex-direction:column}.micro{max-width:none}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="glow"></div>
+    <section class="card" aria-labelledby="title">
+      <div>
+        <div class="pill"><span class="dot"></span> Free Preview</div>
+        <h1 id="title">Class<span>Pilot</span></h1>
+        <div class="tagline">Plan. Teach. Adjust.</div>
+        <p class="sub">Your classroom command center builds itself.</p>
+        <div class="actions">
+          <a class="launch" href="https://script.google.com/macros/s/AKfycbwvNSx-CC_oPTvkyyQWc6aPCeYyOAk_zF0ttnToIla-K5ppFZuexET7oW5zW74nFk6k-g/exec" target="_blank" rel="noopener noreferrer">
+            Launch ClassPilot
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="micro">Sign in with Google, complete the short setup, and ClassPilot creates your personalized workspace.</div>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="logo-card" aria-label="ClassPilot logo">
+          <svg viewBox="0 0 520 520" role="img" aria-labelledby="logoTitle">
+            <title id="logoTitle">ClassPilot</title>
+            <defs>
+              <linearGradient id="gTeal" x1="0" x2="1"><stop stop-color="#4adeca"/><stop offset="1" stop-color="#08a89b"/></linearGradient>
+              <linearGradient id="gBlue" x1="0" x2="1"><stop stop-color="#0f5aa8"/><stop offset="1" stop-color="#062e63"/></linearGradient>
+            </defs>
+            <circle cx="260" cy="215" r="145" fill="#fff" stroke="#08366f" stroke-width="30"/>
+            <path d="M260 24l20 48h-40zM451 215l-48 20v-40zM69 215l48-20v40z" fill="#08366f"/>
+            <rect x="253" y="92" width="14" height="36" rx="7" fill="#10aa9f"/>
+            <rect x="253" y="302" width="14" height="36" rx="7" fill="#10aa9f"/>
+            <rect x="132" y="208" width="36" height="14" rx="7" fill="#10aa9f"/>
+            <rect x="352" y="208" width="36" height="14" rx="7" fill="#10aa9f"/>
+            <path d="M158 210l204-74-79 184-36-72-89-38z" fill="url(#gTeal)"/>
+            <path d="M247 248l115-112-79 184z" fill="#07567c" opacity=".95"/>
+            <path d="M247 248l36 72-4-96z" fill="#082e60"/>
+            <path d="M151 345c62-16 114 3 114 3s52-19 114-3l-13 43c-50-15-101 7-101 7s-51-22-101-7z" fill="url(#gTeal)"/>
+            <path d="M140 388c60-13 125 14 125 14s65-27 125-14l-14 39c-52-13-111 12-111 12s-59-25-111-12z" fill="url(#gBlue)"/>
+            <path d="M193 342c43 1 72 18 72 18s29-17 72-18" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+            <path d="M337 123l13 31 31 13-31 13-13 31-13-31-31-13 31-13z" fill="#ffb316"/>
+            <path d="M203 326c84 27 137-35 157-100" fill="none" stroke="#ffb316" stroke-width="12" stroke-linecap="round"/>
+            <text x="260" y="492" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="56" font-weight="800" fill="#082e60">Class<tspan fill="#0db6a4">Pilot</tspan></text>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <div class="footer"><div><strong>ClassPilot Free Preview</strong></div><div>Simple setup. Your classroom. Your data.</div></div>
+  </main>
+</body>
+</html>
