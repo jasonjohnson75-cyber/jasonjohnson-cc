@@ -1,5 +1,7 @@
 // Main JavaScript for Jason B. Johnson Professional Website
 
+document.documentElement.classList.add('js');
+
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Navigation Toggle
   const menuToggle = document.querySelector('.menu-toggle');
@@ -10,6 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu.classList.toggle('show');
       const isExpanded = navMenu.classList.contains('show');
       menuToggle.setAttribute('aria-expanded', isExpanded);
+      menuToggle.setAttribute('aria-label', isExpanded ? 'Close navigation menu' : 'Open navigation menu');
+
+      if (isExpanded) {
+        navMenu.querySelector('a')?.focus();
+      }
     });
 
     navMenu.querySelectorAll('a').forEach(link => {
@@ -24,6 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove('show');
         menuToggle.setAttribute('aria-expanded', 'false');
         menuToggle.focus();
+      }
+    });
+
+    document.addEventListener('click', event => {
+      if (navMenu.classList.contains('show') && !navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+        navMenu.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1100 && navMenu.classList.contains('show')) {
+        navMenu.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
       }
     });
   }

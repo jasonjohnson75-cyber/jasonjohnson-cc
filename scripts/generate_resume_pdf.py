@@ -89,7 +89,7 @@ story.extend([
         "Use CKLA, Science of Reading practices, UFLI, i-Ready, ALEKS, Canvas, and family communication systems.",
         "Build classroom routines that connect high expectations, student support, Sports + STEAM, and future careers.",
     ]),
-    role("Dean of Students and Academic Coach | Madison STEAM Academy", "2023 - 2025 | South Bend, Indiana", [
+    role("Dean of Students and Academic Coach | Madison STEAM Academy", "2024 - 2025 | South Bend, Indiana", [
         "Supported student behavior, attendance, safety, family communication, and daily school operations.",
         "Coordinated Tier 2 interventions, PBIS resources, MTSS planning, literacy groups, and student progress follow-through.",
         "Supported teachers through coaching, collaborative planning, classroom assistance, and mentoring.",
@@ -102,7 +102,7 @@ story.extend([
 
 story.append(PageBreak())
 story += section("School Transportation and Operations")
-story.append(role("Assistant Director of Transportation | School Transportation", "District Operations Leadership", [
+story.append(role("Assistant Director of Transportation | School Transportation", "2024 | District Operations Leadership", [
     "Supported approximately 96 drivers and paraprofessionals, 220 routes, and a multi-tier transportation schedule.",
     "Worked with Bytecurve, Tyler Technologies and Versatrans, MyGeo GPS, and geographic routing data.",
     "Coordinated scheduling, route planning, incident response, staff support, and communication with schools and families.",
